@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class DemoController extends Controller
 {
-    public function demo()
+    public function demo($id)
     {
-       return view("welcome");
+       return $id;
+    }
+    public function batbuoc($id="Thanh-Thai")
+    {
+      return $id."asdasd";
     }
 }

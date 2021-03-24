@@ -10,5 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'DemoController@demo');
+//tham so bat buoc
+Route::get('KhongBatBuoc/{id}', 'DemoController@demo');
+//tham so khong bat buoc
+Route::get('BatBuoc/{id?}','DemoController@batbuoc');
